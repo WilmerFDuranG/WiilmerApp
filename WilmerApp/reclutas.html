@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet " href="css/proyecto.css">
+    <link rel="shorcut icon" href="imagenes/images.jpeg">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" >
+    <script src="js/jquery-3.6.4.slim.js" defer></script>
+    <script src="js/Bootstrap/bootstrap.min.js" defer></script>
+    <script src="app.js" type="module" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/imagenes/galaxy-explore-vector-programa-espacial-astronautas_8071-35231.avif" alt=""width="80px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/reclutas.html">Reclutas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Reclutas</span></a></li>
+			<li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Team</span></a></li>
+			<li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Skill</span></a></li>
+			<li><a href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Modulo skill</span></a></li>
+            <li><a href="#tab5"><span class="fa fa-bookmark"></span><span class="tab-text">Evaluacion</span></a></li>
+		</ul>
+
+		<div class="secciones">
+            <article id="tab1">
+                 <div class="contenedor">
+                <div class="div-formulario">
+                    <h2>TEAM</h2>
+                    <form action="#" id="formulario">
+                       <h3>Nombre</h3> <input type="text" id="nombre" placeholder="Ingresa un nombre">
+                       <h3>Trainer</h3>
+                        <input type="text" id="trainer" placeholder="Ingresa el trainer">
+                        <h3>Numero ID</h3>
+                        <input type="text" id="identificacion" placeholder="Ingresa identificacion">
+                        <h3>Edad</h3>
+                        <input type="date" id="edad" placeholder="Ingresa tu edad">
+                        <h3>Telefono</h3>
+                        <input type="tex" id="telefono" placeholder="Ingresa telefono">
+                        <h3>Email</h3>
+                        <input type="email" id="email" placeholder="Ingresa tu correo">
+                        <button type="submit" id="btnAgregar">Agregar</button>
+                        
+                    </form>
+                </div>
+				<div class="div-listado">
+                    <h2>Listado reclutas</h2>
+                    <div class="div-reclutas">
+                    </div>
+                </div>
+			</article>
+			<article id="tab2">
+                <div class="container">
+                    <div id="reg" style="display: display;">
+                    <div class="card">
+                        <h5 class="card-header">Registro de Reclutas</h5>
+                    <div class="card-body">
+                    <div class="container">
+                    <div class="row g-3">
+                    <div class="col-12">
+                <form id = "frmData">
+                    <div class="row g-3">
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">ID</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">Numero de identificacion</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">Edad</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="nombres" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres">
+                    </div>
+                    <div class="col-4">
+                        <label for="createdAt" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="createdAt" name="createdAt">
+                    </div>
+                    <div class="col-4">
+                        <label for="createdAt" class="form-label">Fecha ingreso al programa</label>
+                        <input type="date" class="form-control" id="createdAt" name="createdAt">
+                    </div>
+                    <div class="col-4">
+                        <label for="createdAt" class="form-label">Id team</label>
+                        <input type="date" class="form-control" id="createdAt" name="createdAt">
+                        <button type="submit" id="btnAgregar">Agregar</button>
+                    </div>
+                    </div>
+                </form>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                
+			</article>
+			
+			<article id="tab3">
+		ID,NOMBRE
+			</article>
+			<article id="tab4">
+				Id, nombre, id_skill
+			</article>
+            <article id="tab5">
+                Id_recluta, id_modulo, nota
+			</article>
+            
+		</div>
+	</div>
+        
+
+    </div>
+    
+</body>
+</html>
